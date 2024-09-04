@@ -24,7 +24,11 @@ export class ImageDisplayComponent {
 
     this.imageService.getImage().subscribe({
       next: (image) => {
-        this.drawImage(image);
+        if (image) {
+          this.drawImage(image);
+        } else {
+          console.error('Image is null');
+        }
       },
       error: (error) => {
         console.error('Error loading image:', error);
