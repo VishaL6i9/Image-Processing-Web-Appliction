@@ -1,13 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { ImageUploadComponent } from './image-upload/image-upload.component';
+import { ImageDisplayComponent } from './image-display/image-display.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [CommonModule, ImageDisplayComponent, ImageUploadComponent],
+  template: `
+    <div class="container">
+      <h1>Image Editor</h1>
+      <app-image-upload></app-image-upload>
+      <app-image-display></app-image-display>
+    </div>
+  `,
 })
-export class AppComponent {
-  title = 'image-editor';
-}
+export class AppComponent {}
