@@ -1,27 +1,94 @@
-# ImageEditor
+---
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
+# Front-End Extension for Image Processing Application
 
-## Development server
+This project provides a simple front-end interface to interact with the backend image processing API. The backend, developed using Spring Boot, allows users to upload, rotate, resize, and convert images to grayscale.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of Contents
 
-## Code scaffolding
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Contributing](#contributing)
+- [License](#license)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+- **Upload Image**: Upload images to the server.
+- **Rotate Image**: Rotate uploaded images by a specified number of degrees.
+- **Resize Image**: Resize uploaded images to specified dimensions.
+- **Grayscale Image**: Convert uploaded images to grayscale.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Prerequisites
 
-## Running unit tests
+- [Node.js](https://nodejs.org/) (for running the front-end locally)
+- [Spring Boot](https://spring.io/projects/spring-boot) (for running the backend)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Getting Started
 
-## Running end-to-end tests
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/VishaL6i9/SpingBoot-REST-API.git
+   cd <repository-directory>
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-## Further help
+3. **Start the Front-End**:
+   ```bash
+   npm start
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+4. **Start the Backend**:
+   - Ensure your Spring Boot application is running on `http://localhost:8080`.
+
+## Usage
+
+1. **Upload Image**:
+   - Use the file input to select an image and click "Upload" to send it to the server.
+
+2. **Rotate Image**:
+   - Enter the desired rotation angle (in degrees) and click "Rotate" to rotate the uploaded image.
+
+3. **Resize Image**:
+   - Enter the desired width and height and click "Resize" to resize the uploaded image.
+
+4. **Grayscale Image**:
+   - Click "Grayscale" to convert the uploaded image to grayscale.
+
+## API Endpoints
+
+- **Upload Image**:
+  ```
+  POST /api/image/upload
+  ```
+
+- **Rotate Image**:
+  ```
+  POST /api/image/rotate/{degrees}
+  ```
+
+- **Resize Image**:
+  ```
+  POST /api/image/resize
+  ```
+
+- **Grayscale Image**:
+  ```
+  POST /api/image/grayscale
+  ```
+
+## Contributing
+
+Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) to get started.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
