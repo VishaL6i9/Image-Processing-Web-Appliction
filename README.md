@@ -1,70 +1,111 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# Image Processor Frontend
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The Image Processor Frontend is a React application that allows users to upload, process, and download images. It provides various image processing functionalities such as inverting colors, flipping, rotating, resizing, and converting to grayscale. The frontend interacts with a backend API to handle image uploads and processing.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Upload Image**: Upload images to the server.
+- **Invert Colors**: Invert the colors of the uploaded image.
+- **Flip Image**: Flip the image horizontally or vertically.
+- **Rotate Image**: Rotate the image by a specified number of degrees.
+- **Resize Image**: Resize the image to specified dimensions.
+- **Grayscale Conversion**: Convert the image to grayscale.
+- **Download Processed Image**: Download the processed image.
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React**: A JavaScript library for building user interfaces.
+- **Material-UI**: A popular React UI framework for designing responsive and beautiful user interfaces.
+- **Axios**: A promise-based HTTP client for making API requests.
+- **React Router**: For handling routing within the application.
+- **ESLint**: For maintaining code quality and consistency.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get started with the Image Processor Frontend, follow these steps:
 
-### `npm run eject`
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/VishaL6i9/Image-Processing-Web-Appliction.git
+   cd Image-Processing-Web-Appliction
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Start the development server**:
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Open the application**:
+   Navigate to `http://localhost:3000` in your web browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+1. **Upload an Image**:
+   - Click on the "Choose File" button to select an image from your local machine.
+   - Click the "Upload Image" button to upload the image to the server.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Process the Image**:
+   - Use the provided buttons to apply various image processing operations such as inverting colors, flipping, rotating, resizing, and converting to grayscale.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Download the Processed Image**:
+   - After processing the image, a thumbnail preview will be displayed.
+   - Click the "Download Processed Image" link below the thumbnail to download the processed image.
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+We welcome contributions to the Image Processor Frontend! If you'd like to contribute, please follow these steps:
 
-### Analyzing the Bundle Size
+1. **Fork the repository**.
+2. **Create a new branch**:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Make your changes** and commit them:
+   ```bash
+   git commit -m "Add some feature"
+   ```
+4. **Push to the branch**:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. **Create a pull request** on GitHub.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Please ensure your code follows the existing coding standards and includes appropriate tests.
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-### Advanced Configuration
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Name**: Vishal Kandakatla
+- **Email**: vishalkandakatla@gmail.com
 
-### Deployment
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Thanks to the open-source community for providing the tools and libraries that made this project possible.
+- Special thanks to the contributors who have helped improve this project.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
