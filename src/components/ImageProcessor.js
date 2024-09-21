@@ -10,7 +10,8 @@ import {
   Grid,
   Paper,
   Typography,
-  Box
+  Box,
+  Link
 } from '@mui/material';
 
 const API_BASE_URL = 'http://localhost:8080/api/image';
@@ -160,8 +161,13 @@ function ImageProcessor() {
             <Box mt={2}>
               <img src={processedImageUrl} alt="Processed" style={{ maxWidth: '100%' }} />
             </Box>
+            <Box mt={2}>
+              <Link href={processedImageUrl} download="processed_image.png" color="primary">
+                Download Processed Image
+              </Link>
+            </Box>
           </Grid>
-        )}
+)}
       </Grid>
     </Paper>
   );
