@@ -1,6 +1,3 @@
-
----
-
 # Image Processor Frontend
 
 ## Table of Contents
@@ -17,7 +14,7 @@
 
 ## Overview
 
-The Image Processor Frontend is a React application that allows users to upload, process, and download images. It provides various image processing functionalities such as inverting colors, flipping, rotating, resizing, and converting to grayscale. The frontend interacts with a backend API to handle image uploads and processing.
+The Image Processor Frontend is a React application designed to allow users to upload, process, and download images. It offers various image processing functionalities such as inverting colors, flipping, rotating, resizing, and converting to grayscale. The frontend interacts with a backend API to handle image uploads and processing.
 
 ## Features
 
@@ -28,6 +25,8 @@ The Image Processor Frontend is a React application that allows users to upload,
 - **Resize Image**: Resize the image to specified dimensions.
 - **Grayscale Conversion**: Convert the image to grayscale.
 - **Download Processed Image**: Download the processed image.
+- **Image Processing History**: View and revert to previous image processing states.
+- **Error Handling**: Display error messages using a Snackbar.
 
 ## Technologies Used
 
@@ -43,8 +42,8 @@ To get started with the Image Processor Frontend, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/VishaL6i9/Image-Processing-Web-Appliction.git
-   cd Image-Processing-Web-Appliction
+   git clone https://github.com/VishaL6i9/Image-Processing-Web-Application.git
+   cd Image-Processing-Web-Application
    ```
 
 2. **Install dependencies**:
@@ -72,6 +71,13 @@ To get started with the Image Processor Frontend, follow these steps:
 3. **Download the Processed Image**:
    - After processing the image, a thumbnail preview will be displayed.
    - Click the "Download Processed Image" link below the thumbnail to download the processed image.
+
+4. **View Image Processing History**:
+   - The application maintains a history of all image processing operations.
+   - You can revert to any previous state by clicking on the corresponding history item.
+
+5. **Error Handling**:
+   - If an error occurs during image upload or processing, an error message will be displayed using a Snackbar.
 
 ## Contributing
 
@@ -106,6 +112,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgments
 
 - Thanks to the open-source community for providing the tools and libraries that made this project possible.
-- Special thanks to the contributors who have helped improve this project.
 
----
