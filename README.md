@@ -1,5 +1,9 @@
 # Image Processor Frontend
 
+
+- **Warning**: This Application is designed to use the REST API: https://github.com/VishaL6i9/Image-Processing-SpringBoot-API.git for all of its functionality , Ensure it is up and running before proceeding.
+
+
 ## Table of Contents
 
 - [Overview](#overview)
